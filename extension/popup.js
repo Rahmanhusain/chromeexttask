@@ -1,14 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // Get button and title display area
-  const button = document.getElementById("getTitleBtn");
-  const titleDiv = document.getElementById("tabTitle");
+document.getElementById("startScraping").addEventListener("click", () => {
+  const links = [
+    "https://www.linkedin.com/in/rahman-husain-45bb60237/",
+    "https://www.linkedin.com/in/arti-sergeev/",
+    "https://www.linkedin.com/in/michal-zalobny/"
+  ];
 
-  // adding listener for button click
-  button.addEventListener("click", function () {
-    // Getting current active tab
-    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-      // Show the tab title
-      titleDiv.textContent = tabs[0].title;
-    });
-  });
+  chrome.runtime.sendMessage({ action: "startScraping", links });
 });

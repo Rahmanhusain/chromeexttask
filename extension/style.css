@@ -33,12 +33,3 @@ button {
 button:hover {
   background-color: #2563eb;
 }
-/* Tab title display */
-#tabTitle {
-  background-color: white;
-  padding: 12px;
-  border-radius: 6px;
-  border: 1px solid #e5e7eb;
-  color: #6b7280;
-  font-style: italic;
-}
