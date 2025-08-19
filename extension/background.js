@@ -1,4 +1,4 @@
-chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+/* chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.action === "startScraping") {
     let index = 0;
 
@@ -14,3 +14,4 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     openNext();
   }
 });
+ */

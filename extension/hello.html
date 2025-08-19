@@ -2,16 +2,23 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>linkedin Profile Scrapper</title>
+    <title>  Task-3: Advance interaction with page</title>
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- heading -->
-    <h1>Task 2 linkedin Profile Scrapper</h1>
+    <h1>Advance interaction with page</h1>
 
-    <!-- Button to Scrap and open tabs -->
-    <button id="startScraping">Start</button>
+    <!-- Like and Comment Count Inputs -->
+    <input type="number" id="likeCount" placeholder="Like Count" min="1" />
+    <input
+      type="number"
+      id="commentCount"
+      placeholder="Comment Count"
+      min="1"
+    />
+    <button id="actionBtn" disabled>Go to linkedin</button>
     <script src="popup.js"></script>
   </body>
 </html>

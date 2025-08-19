@@ -1,3 +1,20 @@
+/* Number input fields */
+input[type="number"] {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+input[type="number"]:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
 body {
   width: 320px;
   padding: 16px;
@@ -25,7 +42,7 @@ button {
   border-radius: 6px;
   border: none;
   margin-bottom: 16px;
-  cursor: pointer;
+  cursor: not-allowed;
   transition: background-color 0.2s;
 }
 

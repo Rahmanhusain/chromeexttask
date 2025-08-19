@@ -1,6 +1,6 @@
 {
-  "name": "linkedin Profile Scrapper",
-  "description": "Extension for getting the LinkedIn profile information and post it to the server",
+  "name": "LinkedIn Extension",
+  "description": "Advance interaction with page",
   "version": "1.0",
   "manifest_version": 3,
   "action": {
@@ -12,8 +12,9 @@
   "background": { "service_worker": "background.js" },
    "content_scripts": [
     {
-      "matches": ["https://www.linkedin.com/in/*"],
-      "js": ["content.js"]
+      "matches": ["https://www.linkedin.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
     }
   ]
 }
